@@ -11,4 +11,6 @@ deploy:
   api_key: $GITHUB_TOKEN
   file: flosstudio.schema.json
   skip_cleanup: true
-  on.tags: true
+  on:
+    tags: true
+    all_branches: true
