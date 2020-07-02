@@ -230,6 +230,7 @@ properties:
         - Additive
         - Amplifier
         - Arpeggiator
+        - Accordion
         - Audio analysis
         - Audio morphing
         - Audio programming
