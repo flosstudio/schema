@@ -1,16 +1,17 @@
 language: python
 python:
-- 3.8
-- pypy3
+  - 3.8
+  - pypy3
 install:
-- pip install -r requirements.txt
+  - pip install -r requirements.txt
 script:
-- make
+  - make
 deploy:
   provider: releases
   api_key:
     secure: WShlK0sSphY7Td4LxvXEMqUcxFlcTZb/LuamcQO9TIHe6LhR/z3i1LzxPyDHuJ7ipTHnVsteriGsjfKr0n2kq3gVBCZ28ZBeGK4gajFJyLBDeOoL6TdF/C0w9MRDS1qQLd1mvuOAWIpIXL/N0TjBZ4D9l5VcsM8Q4ff8OjdRKqrZC3CyB599oXT1OEqtbr6b4hlFtniZVbWtFskpmz54Da008LeboQsPnfaT4O9JzNe3qRksw7qndvEjqyWV+Q2SmOs0A20OmEZjp0QFYQ6oKzyzwkASS3t5U5yIqZ9ayHr8GniyRsi2qkYsd7d8RJyFkHxxpiRRmj1KUAzRRpm4cUWebh0KiROQ2ldVYBh/QQZPeChtqRhmZTgiJrQSyUsWaiyvBk5rUhdMdAGYspkFsSKjTmwmdDSSDLRcMRkH4/JvgwbB+wDvD/KDxSZC9/bmhAri0qXoCnEX5Y4mtfNPFKHegzsSpXw9P9mAccwwcG8itym3ulEgM3LVY2eOjbLs/m8xeUuu0DLcUCVa649mwBwQZO+jWJO5AGnvAVtssDWxz7S/fWKfUuoG0TW7rWcYKrYDSDZzRcZ40b8ZF+4zmhPw9WJyobU9r6sptihgVTsFM/5kjzUzBs+QrfoWHNtxIrNMNrpeUyKYY3ugeb/deq3JOgxk3D3iaF4C6N6+s7U=
   file: flosstudio.schema.json
   on:
+    tags: true
     repo: flosstudio/schema
-  skip_cleanup: 'true'
+  skip_cleanup: "true"
