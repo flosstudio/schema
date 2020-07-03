@@ -14,3 +14,4 @@ previous builds.
 # License
 
 The flosstudio jsonschema is released under the CC0 1.0 Universal license.
+
