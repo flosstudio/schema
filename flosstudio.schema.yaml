@@ -11,7 +11,10 @@ properties:
   Summary:
     type: string
   Authors:
-    type: string
+    type: array
+    uniqueItems: true
+    items:
+      type: string
   URL:
     type: string
     format: uri
