@@ -227,10 +227,10 @@ properties:
       enum:
         - 3D audio
         - ABC notation
+        - Accordion
         - Additive
         - Amplifier
         - Arpeggiator
-        - Accordion
         - Audio analysis
         - Audio morphing
         - Audio programming
@@ -325,8 +325,42 @@ properties:
         - Wah
         - Waveshaper
         - Wavetable
+  Repositories:
+    type: array
+    uniqueItems: true
+    items:
+      type: string
+      enum:
+        - AVLinux
+        - Android
+        - AppImage
+        - Arch Linux
+        - Arch Linux > AUR
+        - CentOS
+        - Debian
+        - Debian > KXStudio
+        - ElementaryOS
+        - Fedora
+        - Fedora > LinuxMAO
+        - Flatpak
+        - Gentoo
+        - Linux Mint
+        - Manjaro
+        - NixOS
+        - OpenSUSE
+        - OpenSUSE > GeekosDAW
+        - Slackware
+        - Snap
+        - Ubuntu
+        - Ubuntu > KXStudio
+        - Ubuntu Studio
   Notes:
     type: string
+  Entry editors:
+    type: array
+    uniqueItems: true
+    items:
+      type: string
 additionalProperties: false
 required:
   - Name
