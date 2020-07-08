@@ -10,6 +10,8 @@ properties:
     type: string
   Summary:
     type: string
+  Description:
+    type: string
   Authors:
     type: array
     uniqueItems: true
