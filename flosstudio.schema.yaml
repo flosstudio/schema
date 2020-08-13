@@ -222,6 +222,8 @@ properties:
         - LV2
         - VST2
         - VST3
+        - PipeWire
+        - LADSPA
   Latest version:
     type: string
   Last updated:
@@ -354,6 +356,7 @@ properties:
         - Gentoo
         - Linux Mint
         - Manjaro
+        - MX Linux
         - NixOS
         - OpenSUSE
         - OpenSUSE > GeekosDAW
